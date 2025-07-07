@@ -1,6 +1,6 @@
 // app/Papers/[id]/page.tsx
 import { notFound } from 'next/navigation';
-import QuestionPaper from '@/models/QuestionPaper';
+import { IQuestionPaper } from '@/models/QuestionPaper';
 
 async function getPaper(id: string) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/papers/${id}`, {

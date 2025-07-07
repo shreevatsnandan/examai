@@ -1,6 +1,6 @@
 // app/api/papers/[id]/route.ts
 import { NextResponse } from 'next/server';
-import { auth } from '@clerk/nextjs';
+import { auth } from '@clerk/nextjs/server';
 import QuestionPaper from '@/models/QuestionPaper';
 import dbConnect from '@/lib/dbConnect';
 
